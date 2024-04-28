@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<title>Min webbplats</title>
+<style type="text/css">
+    
+#gifImage {
+    display: none;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#gifImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#showGifButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#displayText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    font-size: 40px;
+    font-family: impact;
+    text-align: center;
+    display: none;
+    animation: changeColor 1s infinite;
+}
+
+@keyframes changeColor {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; }
+    100% { color: purple; }
+}
+
+
+</style>
+</head>
+
+<body>
+
+<button id="showGifButton">Hey Nineteen</button>
+<img id="gifImage" src="FISq-H.gif" alt="GIF-bild">
+<div id="displayText">Me when Steely Dan!!!</div>
+
+<audio id="myAudio" src="Black Cow.mp3" preload="auto"></audio>
+
+<script>
+document.getElementById('showGifButton').addEventListener('click', function() {
+    var gifImage = document.getElementById('gifImage');
+    gifImage.style.display = 'block';
+    this.style.display = 'none';
+    displayText.style.display = 'block';
+    playAudio();
+});
+
+function playAudio() {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+}
+</script>
+</body>
+</html>
