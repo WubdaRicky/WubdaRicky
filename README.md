@@ -1,4 +1,4 @@
-Just a funny website.
+### Just a funny website.
 
 <!--
 **WubdaRicky/WubdaRicky** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
