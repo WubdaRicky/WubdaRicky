@@ -21,7 +21,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover; /* Så att bilden täcker hela området utan att deformeras */
+        object-fit: cover;
     }
 
     #showGifButton {
@@ -55,7 +55,7 @@
     }
 
 <audio controls>
-  <source src="Black Cow.mp3" type="audio/mpeg">
+  <source src="Hey Nineteen.mp3" type="audio/mpeg">
 
 </style>
 </head>
